@@ -12,8 +12,6 @@ namespace StudentRegister
 {
     internal class Student
     {
-
-
         public int StudentId { get; set; }
         public string FirstName { get; set; } = "";
         public string LastName { get; set; } = "";
@@ -24,7 +22,6 @@ namespace StudentRegister
         {
             return $"Id: {this.StudentId}, Name: {this.FirstName} {this.LastName}, City: {this.City}";
         }
-
     }
 }
 

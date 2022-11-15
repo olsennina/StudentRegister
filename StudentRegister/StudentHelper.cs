@@ -32,7 +32,6 @@ namespace StudentRegister
         }
         public static void EditStudent()
         {
-
             var dbContext = new DbContextStudent();
 
             foreach (var item in dbContext.Students)
@@ -43,7 +42,6 @@ namespace StudentRegister
             Console.WriteLine("Wich student do you want to edit? Press the Id number");
             int studId = Convert.ToInt32(Console.ReadLine());
             var stud = dbContext.Students.Where(s => s.StudentId == studId).FirstOrDefault<Student>();
-
             if (stud != null)
             {
 
